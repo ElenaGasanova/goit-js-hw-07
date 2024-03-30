@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+
+  line-height: 1.33; /* 133.333% */
+  letter-spacing: 0.96px;
+
+  background: #e6e6e9;
+}
+
+input {
+  padding: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+:focus {
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid #000;
+}
