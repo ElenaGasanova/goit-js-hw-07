@@ -10,13 +10,15 @@ const divEl = document.querySelector("#boxes");
 const btnDestroy = document.querySelector("[data-destroy]");
 
 btnCreate.addEventListener("click", () => {
-  if (inputValue < 100 && inputValue > 1) {
+  if (Number(inputValue) <= 100 && Number(inputValue) >= 1) {
     createBoxes(inputValue);
+    inputEl.value = "";
   }
 });
 
 btnDestroy.addEventListener("click", () => {
   destroyBoxes();
+  inputEl.value = "";
 });
 
 let inputValue;
